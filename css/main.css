@@ -4,6 +4,7 @@ body{
 	margin: 0;
 	padding: 0;
 	background-color: rgb(75, 191, 107);
+  font-family: Helvetica,Arial,sans-serif;
 }
 
 
@@ -45,8 +46,8 @@ main{
 
 	width: 23%;
 	height: auto;
-	display: inline-block;
 	padding: 5px;
+  display: inline-block;
 }
 
 
@@ -85,6 +86,11 @@ button:hover{
 	background-color:#4c9438;
 }
 
+button:focus{
+
+  outline: none;
+}
+
 span{
 
 	color: #999;
@@ -111,7 +117,7 @@ input:hover{
 
 .hidden{
 
-  visibility: hidden;
+  display: none;
 
 }
 
@@ -122,10 +128,10 @@ input:hover{
 	width: 23%;
 	height: 800px;
 	-webkit-border-radius:5px;
-    -moz-border-radius:5px;
-    border-radius:5px;
-    cursor: pointer;
-    background-color: #E2E4E6;
+  -moz-border-radius:5px;
+  border-radius:5px;
+  cursor: pointer;
+  background-color: #E2E4E6;
     
 
 }
@@ -179,6 +185,158 @@ input:hover{
 }
 
 
+/**** NUEVAS LISTAS **/
+
+
+
+
+.newlist{
+
+  width: 23%;
+  height: auto;
+  -webkit-border-radius:5px;
+  -moz-border-radius:5px;
+  border-radius:5px;
+  cursor: pointer;
+  background-color: #E2E4E6;
+  display: inline-block;
+  vertical-align: top;
+    
+
+}
+
+
+.newlist p{
+
+  margin-left: 15px;
+  font-size: 14px;
+  font-weight: 600; 
+
+}
+
+
+/*
+.newlist a{
+
+  margin-left: 15px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  color: grey;
+  text-decoration: none; 
+  display: block;
+ 
+
+}
+
+
+
+.newlist a:hover{
+
+  background-color: rgba(0,0,0, 0.1);
+  color: #666;
+  text-decoration: underline; 
+  
+
+}
+
+
+
+
+
+.newlist input{
+
+    background-color: #E2E4E6;
+    width: 93%;
+    padding: 11px;
+    font-size: 14px;
+    cursor: pointer;
+  
+
+}
+
+
+.newlist input:hover{
+
+    background-color: rgba(0,0,0, 0.1);
+    
+
+}
+
+.newlist input:focus{
+
+    height: 50px;
+    background-color: white;
+    padding: 11px;
+    font-size: 14px;
+    cursor: text;
+
+
+}
+
+*/
+
+
+
+.newlist textarea{
+
+    background-color: #E2E4E6;
+    width: 92%;
+    height: 15px;
+    padding: 11px;
+    font-size: 14px;
+    cursor: pointer;
+    border:none;
+    resize: none;
+    display: inline-block;
+  
+
+}
+
+
+.newlist textarea:hover{
+
+    background-color: rgba(0,0,0, 0.1);
+    
+
+}
+
+
+
+.input-card{
+    
+    width: 88%; 
+    height: 50px;
+    background-color: white;
+    margin: 6px;
+    padding: 11px;
+    font-size: 14px;
+    cursor: text;
+    outline: none;
+
+}
+
+#buttons-card{
+  
+  padding: 0 10px 10px;
+}
+
+
+/* TEXTO PLACEHOLDER */
+
+.newlist ::-webkit-input-placeholder { 
+  color: grey;
+
+}
+.newlist ::-moz-placeholder { 
+ color: grey;
+}
+.newlist :-ms-input-placeholder { 
+ color: grey;
+}
+.newlist :-moz-placeholder { 
+  color: grey;
+}
 
 
 
