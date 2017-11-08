@@ -28,7 +28,7 @@ closeList.addEventListener("click", function(){
 // BOTON GUARDAR LISTA
 
 var saveList = document.getElementById("save");
-var lista = document.getElementById("lista");
+var inputList = document.getElementById("lista");
 var main = document.getElementById("principal");
 
 
@@ -74,7 +74,7 @@ saveList.addEventListener("click", function() {
     
     divList.appendChild(divButtons);
 
-    main.insertBefore(divList,lista);
+    main.insertBefore(divList,inputList);
 
     
    
@@ -82,6 +82,7 @@ saveList.addEventListener("click", function() {
 
 
 /*
+
 // MOSTRAR INPUT PARA AÑADIR TARJETA
 
 
@@ -105,8 +106,8 @@ closeCard.addEventListener("click", function(){
 	document.getElementById("buttons-card").classList.add("hidden");
 	document.getElementById("card").classList.remove("input-card");
 });
-*/
 
+*/
 
 
 
