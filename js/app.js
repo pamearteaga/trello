@@ -66,13 +66,21 @@ saveList.addEventListener("click", function() {
 
     // crear textarea
     divList.appendChild(textArea);
+    textArea.setAttribute("id", "card");
+    textArea.setAttribute("placeholder", "Añadir una tarjeta...");
 
     // crear botones
     saveButton.appendChild(textButton);
     divButtons.appendChild(saveButton);
+    saveButton.setAttribute("id","save-card") // para agregarle un id al element boton
     divButtons.appendChild(closeButton);
+    closeButton.classList.add("icon-cancel"); 
+    closeButton.setAttribute("id", "close-card");   
+    divButtons.setAttribute("id", "buttons-card");  
+    divButtons.setAttribute("class", "hidden");
     
     divList.appendChild(divButtons);
+    divList.classList.add("newlist");
 
     main.insertBefore(divList,inputList);
 
@@ -81,7 +89,7 @@ saveList.addEventListener("click", function() {
 });
 
 
-/*
+
 
 // MOSTRAR INPUT PARA AÑADIR TARJETA
 
@@ -107,7 +115,7 @@ closeCard.addEventListener("click", function(){
 	document.getElementById("card").classList.remove("input-card");
 });
 
-*/
+
 
 
 
