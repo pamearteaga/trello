@@ -25,7 +25,7 @@ closeList.addEventListener("click", function(){
 
 
 
-// BOTON GUARDAR LISTA
+// BOTON GUARDAR NUEVA LISTA
 
 var saveList = document.getElementById("save");
 var inputList = document.getElementById("lista");
@@ -49,15 +49,14 @@ saveList.addEventListener("click", function() {
     // variable botones
     var divButtons = document.createElement("div");
     var saveButton = document.createElement("button");
-    var textButton = document.createTextNode("Guardar");
+    var textButton = document.createTextNode("Añadir");
     var closeButton = document.createElement("span");
 
     // seccion donde va la nueva lista
     var divList = document.createElement("div");
 
   
-    // crear nueva lista  
-    //document.getElementById("save").disabled = false;
+    // crear nueva lista 
 
     // crear titulo
     pList.appendChild(contentList);
@@ -65,9 +64,10 @@ saveList.addEventListener("click", function() {
 
 
     // crear textarea
-    divList.appendChild(textArea);
     textArea.setAttribute("id", "card");
     textArea.setAttribute("placeholder", "Añadir una tarjeta...");
+    divList.appendChild(textArea);
+    
 
     // crear botones
     saveButton.appendChild(textButton);
@@ -77,7 +77,7 @@ saveList.addEventListener("click", function() {
     closeButton.classList.add("icon-cancel"); 
     closeButton.setAttribute("id", "close-card");   
     divButtons.setAttribute("id", "buttons-card");  
-    divButtons.setAttribute("class", "hidden");
+    //divButtons.setAttribute("class", "hidden"); // para esconder los botones
     
     divList.appendChild(divButtons);
     divList.classList.add("newlist");
@@ -99,9 +99,9 @@ var addCard = document.getElementById("card");
 
 addCard.addEventListener("click", function(){
 
-	document.getElementById("buttons-card").classList.remove("hidden");
-	document.getElementById("card").classList.add("input-card");
-});
+	document.getElementById("buttons-card").classList.remove("hidden"); //quitar clase que los mantien escondidos
+	
+}); 
 
 
 // CERRAR INPUT PARA AÑADIR TARJETA
@@ -112,9 +112,36 @@ var closeCard = document.getElementById("close-card");
 closeCard.addEventListener("click", function(){
 
 	document.getElementById("buttons-card").classList.add("hidden");
-	document.getElementById("card").classList.remove("input-card");
+	
 });
 
+
+
+
+// BOTON AÑADIR NUEVA TARJETA
+
+var newCard = document.getElementById("save-card");
+var divCard = document.querySelector(".newlist");
+
+newCard.addEventListener("click" , function(){
+
+      
+      // variables titulo tarjeta
+    var textCard = document.getElementById("card").value;
+    document.getElementById("card").value = "";
+
+    var titleCard = document.createElement("div");
+    var textTitle = document.createTextNode(textCard);
+
+    titleCard.appendChild(textTitle);
+    titleCard.setAttribute("class", "newcard"); 
+
+   divCard.insertBefore(titleCard,addCard);
+
+
+
+
+});
 
 
 

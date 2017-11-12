@@ -188,8 +188,6 @@ input:hover{
 /**** NUEVAS LISTAS **/
 
 
-
-
 .newlist{
 
   width: 23%;
@@ -305,7 +303,7 @@ input:hover{
 
 
 
-.input-card textarea{
+.newlist textarea:focus{
     
     width: 88%; 
     height: 50px;
@@ -315,8 +313,30 @@ input:hover{
     font-size: 14px;
     cursor: text;
     outline: none;
+    resize: vertical;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
 
 }
+
+.newcard{
+    
+    width: 88%; 
+    height: 11px;
+    border-bottom: 1px #ccc solid;
+    color: black;
+    background-color: white;
+    margin: 6px;
+    padding: 11px;
+    font-size: 14px;
+    outline: none;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+   
 
 #buttons-card{
 
