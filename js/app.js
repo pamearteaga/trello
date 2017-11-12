@@ -43,7 +43,7 @@ saveList.addEventListener("click", function() {
 
     // variable textarera
     var textArea = document.createElement("textarea");
-    // falta agregar atributo placeholder
+ 
 
 
     // variable botones
@@ -67,6 +67,7 @@ saveList.addEventListener("click", function() {
     textArea.setAttribute("id", "card");
     textArea.setAttribute("placeholder", "Añadir una tarjeta...");
     divList.appendChild(textArea);
+    
     
 
     // crear botones
