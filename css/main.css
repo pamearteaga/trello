@@ -214,66 +214,6 @@ input:hover{
 }
 
 
-/*
-.newlist a{
-
-  margin-left: 15px;
-  margin-bottom: 10px;
-  font-size: 14px;
-  font-weight: 400;
-  color: grey;
-  text-decoration: none; 
-  display: block;
- 
-
-}
-
-
-
-.newlist a:hover{
-
-  background-color: rgba(0,0,0, 0.1);
-  color: #666;
-  text-decoration: underline; 
-  
-
-}
-
-
-
-
-
-.newlist input{
-
-    background-color: #E2E4E6;
-    width: 93%;
-    padding: 11px;
-    font-size: 14px;
-    cursor: pointer;
-  
-
-}
-
-
-.newlist input:hover{
-
-    background-color: rgba(0,0,0, 0.1);
-    
-
-}
-
-.newlist input:focus{
-
-    height: 50px;
-    background-color: white;
-    padding: 11px;
-    font-size: 14px;
-    cursor: text;
-
-
-}
-
-*/
 
 
 

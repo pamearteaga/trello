@@ -4,26 +4,32 @@
 	<meta charset="UTF-8">
 	<title>Trello</title>
 
+   <!--link estilo css-->
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 
+   <!--link favicon-->
 	<link rel="icon" type="image/png" href="favicomatic/favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="favicomatic/favicon-16x16.png" sizes="16x16" />
-
+    <!--link ícono para cerrar x -->
     <link rel="stylesheet" type="text/css" href="fontello/css/close.css">
  
 </head>
 <body>
 
-	<header>
+	<header> <!--header con logo-->
 		<img src="img/logo_trello_w.png">
 	</header>
 
-	<main id="principal">
+	<main id="principal"> <!--contenedor principal-->
 
-      <div class="newlist">
+      
+     <!-- Esta lista la dejé a proposito en el HTML para que puedan 
+          probar las versiones 0.0.4 y 0.0.5 ya que estas dos funciones no
+          funcionan en las lista creadas con JS -->
 
-         <p>prueba</p>
-         <div class="newcard">Prueba 2</div>
+      <div class="newlist"> 
+
+         <p>Prueba añadir tarjetas</p>
 	   	 <textarea id="card" placeholder="Añadir una tarjeta..."></textarea>
 	   	 <div id="buttons-card" class="hidden">
 		 <button id="save-card">Añadir</button>
@@ -31,23 +37,15 @@
 		</div>
 	</div> 
 
-
-	  <!--
-	   <div class="newlist">
-
-         <p>prueba</p>
-         <div class="newcard">Prueba 2</div>
-	   	 <textarea id="card" placeholder="Añadir una tarjeta..."></textarea>
-	   	 <div id="buttons-card" class="hidden">
-		 <button id="save-card">Guardar</button>
-		 <span id="close-card" class="icon-cancel"></span>
-		</div>
-	</div> -->
+  
+<!-- Aquí aparecerán las nuevas listas creadas con JS donde si funcionan 
+	las versiones  0.0.1, 0.0.2, 0.0.3 y 0.0.6 -->
 
 
-       <div id="lista">
+
+       <div id="lista"> <!-- input para crear nuesvas listas -->
 		<input id="list" type="text" placeholder="Añadir una lista...">
-		<div id="buttons" class="hidden">
+		<div id="buttons" class="hidden"> <!-- botones -->
 		<button id="save">Guardar</button>
 		<span id="close" class="icon-cancel"></span>
 		</div>
@@ -55,6 +53,7 @@
 
 	</main>
 
+<!-- link app.js -->
 <script type="text/javascript" src="js/app.js"></script>
 </body>
 </html>
